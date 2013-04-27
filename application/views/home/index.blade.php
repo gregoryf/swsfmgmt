@@ -3,9 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Laravel: A Framework For Web Artisans</title>
+	<title>SWSF:MGMT - Empire management application</title>
 	<meta name="viewport" content="width=device-width">
-	{{ HTML::style('laravel/css/style.css') }}
 	{{ Asset::container('bootstrapper')->styles(); }}
 	{{ Asset::container('bootstrapper')->scripts(); }}
 </head>
@@ -24,28 +23,18 @@
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="">
-                <a href="./index.html">Home</a>
+                <a href="/laravel/public/">Home</a>
               </li>
               <li class="">
-                <a href="./getting-started.html">Get started</a>
-              </li>
-              <li class="active">
-                <a href="./scaffolding.html">Scaffolding</a>
-              </li>
-              <li class="">
-                <a href="./base-css.html">Base CSS</a>
-              </li>
-              <li class="">
-                <a href="./components.html">Components</a>
-              </li>
-              <li class="">
-                <a href="./javascript.html">JavaScript</a>
+                <a href="/laravel/public/users/">Users</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </div>
+
+    @yield('content')
 
 </body>
 </html>
